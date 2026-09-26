@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Федюшин Михаил | Музыкант</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .skills-list { list-style-type: square; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/avatar.jpg" alt="Фото Федюшина Михаила" width="250" height="350">
+    <h1>Федюшин Михаил</h1>
+    <p>Музыкант, саунд-продюсер и звукорежиссёр</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Мой арсенал навыков</h2>
+      <ul class="skills-list">
+        <li><span>Игра на акустической и бас-гитаре</span></li>
+        <li><span>Создание аранжировок в Ableton Live</span></li>
+        <li><span>Сведение мультитрека и мастеринг</span></li>
+        <li><span>Саунд-дизайн для видеороликов</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Избранные проекты</h2>
+      <ol class="projects-list">
+        <li class="project-item"><span class="project-name">Запись и сведение музыкального альбома инди-группы</span></li>
+        <li class="project-item"><span class="project-name">Создание эмбиент-саундтрека для студенческой игры</span></li>
+        <li class="project-item"><span class="project-name">Синтвейв-ремикс на классическую рок-композицию</span></li>
+      </ol>
+    </section>
+
+    <aside>
+      <h3>Студийное оборудование</h3>
+      <p><strong>Любимый инструмент:</strong> Аналоговый синтезатор Korg Minilogue.</p>
+      <p><strong>Жанр:</strong> Предпочитаю работать с электронной музыкой и альтернативным роком.</p>
+    </aside>
+
+    <section>
+      <h2>Свяжитесь со мной</h2>
+      <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+        <label for="user_name">Ваше имя:</label>
+        <input type="text" id="user_name" name="user_name" placeholder="Как вас зовут?" required>
+        
+        <label for="user_email">Ваш Email:</label>
+        <input type="email" id="user_email" name="user_email" placeholder="Ваш Email адрес" required>
+        
+        <label for="user_message">Сообщение:</label>
+        <textarea id="user_message" name="user_message" placeholder="Текст вашего сообщения" rows="4" required></textarea>
+        
+        <button type="submit">Отправить письмо</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026. Федюшин Михаил. <a href="https://github.com/qwomty" class="footer-link">Мой GitHub</a></p>
+  </footer>
+</body>
+</html>

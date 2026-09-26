@@ -1,0 +1,126 @@
+:root {
+  --primary-bg: #091839;
+  --secondary-bg: #1e293b;
+  --accent-color: #c084fc;
+  --text-color: #cbd5e1;
+  --text-light: #ffffff;
+  --font-main: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: static;
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+}
+
+aside {
+  background-color: var(--secondary-bg);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+header img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.1s ease, background-color 0.3s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.footer-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.footer-link:visited {
+  color: #94a3b8;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
+.projects-list {
+  padding-left: 20px;
+}
+
+.project-item {
+  margin-bottom: 12px;
+}
+
+.project-name {
+  position: relative;
+  display: inline-block;
+  padding: 0 25px;
+  cursor: default;
+}
+
+.project-name::before,
+.project-name::after {
+  content: '〰';
+  position: absolute;
+  top: 0;
+  color: #475569;
+  transition: color 0.3s ease;
+}
+
+.project-name::before {
+  left: 0;
+}
+
+.project-name::after {
+  right: 0;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(-3deg); }
+  75% { transform: translateX(2px) rotate(3deg); }
+}
+
+.project-name:hover::before,
+.project-name:hover::after {
+  color: var(--accent-color);
+  animation: shake 0.3s infinite;
+}
