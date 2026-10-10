@@ -17,6 +17,11 @@ body {
   position: static;
 }
 
+header {
+  /*ПОЗИЦИОНИРОВАНИЕ: RELATIVE */
+  position: relative;
+}
+
 h1, h2, h3 {
   color: var(--accent-color);
 }
@@ -64,6 +69,11 @@ button {
   transition: transform 0.1s ease, background-color 0.3s;
 }
 
+button:focus {
+  outline: 2px solid var(--text-light);
+  outline-offset: 3px;
+}
+
 button:active {
   transform: scale(0.98);
 }
@@ -81,6 +91,16 @@ button:active {
   text-decoration: none;
 }
 
+.footer-link:focus {
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.footer-link:active {
+  color: var(--text-light); 
+}
+
 .projects-list {
   padding-left: 20px;
 }
@@ -96,6 +116,7 @@ button:active {
   cursor: default;
 }
 
+/*ПОЗИЦИОНИРОВАНИЕ: ABSOLUTE */
 .project-name::before,
 .project-name::after {
   content: '〰';
